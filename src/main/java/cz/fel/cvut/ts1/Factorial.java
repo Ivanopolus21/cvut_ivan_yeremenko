@@ -1,4 +1,4 @@
-package org.example;
+package cz.fel.cvut.ts1;
 
 public class Factorial {
 
