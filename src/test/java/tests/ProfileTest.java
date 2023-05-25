@@ -60,4 +60,14 @@ public class ProfileTest {
         assertEquals(expectedUrl, driver.getCurrentUrl());
 
     }
+
+    @Test
+    public void clickOnWishlistTest() {
+        String expectedUrl = "https://automationteststore.com/index.php?rt=account/wishlist";
+
+        Profile profile = new Profile(driver, driver.getCurrentUrl());
+        profile.clickOnWishlist();
+
+        assertEquals(expectedUrl, driver.getCurrentUrl());
+    }
 }
