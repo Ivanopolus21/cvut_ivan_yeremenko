@@ -17,6 +17,10 @@ public class Profile {
         driver.findElement(By.cssSelector("a[title][href='https://automationteststore.com/index.php?rt=account/edit']")).click();
     }
 
+    public void clickOnWishlist() {
+        driver.findElement(By.cssSelector("a[title][href='https://automationteststore.com/index.php?rt=account/wishlist']")).click();
+    }
+
     public void setNewFirstName(String firstName) {
         driver.findElement(By.name("firstname")).clear();
         driver.findElement(By.name("firstname")).sendKeys(firstName);
